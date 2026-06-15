@@ -1,3 +1,3 @@
-module dns_resolver_2131f6
+module dns_resolver_63c92b
 
 go 1.19

@@ -1,4 +1,4 @@
-# dns-resolver-2131f6
+# dns-resolver-63c92b
 
 A Go dns-resolver utility.
 
